@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://nilssoncreative.se/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/NilssonCreative/ncdbg"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/ncdbg/icon.png",
