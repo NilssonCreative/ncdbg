@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "ncdbg",
+	"version": "${version}",
+	"name": "NCDBG",
+	"description": "Utilities for debugging and testing Minecraft farms and such.",
+	"authors": [
+		"Nilsson Creative"
+	],
+	"contact": {
+		"homepage": "https://nilssoncreative.se/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ncdbg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nilssoncrative.NCDBG"
+		],
+		"client": [
+			"com.nilssoncrative.NCDBGClient"
+		],
+		"fabric-datagen": [
+			"com.nilssoncrative.NCDBGDataGenerator"
+		]
+	},
+	"mixins": [
+		"ncdbg.mixins.json",
+		{
+			"config": "ncdbg.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
